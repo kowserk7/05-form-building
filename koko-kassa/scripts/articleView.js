@@ -81,7 +81,7 @@ articleView.initNewArticlePage = () => {
   $('#article-json').on('focus', function(){
     this.select();
   });
-  $('article-form').on('change', 'inout','textarea', articleView.create)
+  $('article-form').on('change', 'input, textarea', articleView.create)
 };
 
 articleView.create = () => {
@@ -102,7 +102,7 @@ articleView.create = () => {
 
 // COMMENT: Where is this function called? Why?
 // PUT YOUR RESPONSE HERE
-// on the index page. We're using multipl 
+// on the index page.
 articleView.initIndexPage = () => {
   articleView.populateFilters();
   articleView.handleCategoryFilter();
