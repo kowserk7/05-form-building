@@ -56,13 +56,14 @@
            4. Author's URL
            5. Article category
            6. Some way to know if this article is a draft or is published -->
-           <form id="article-form"></form>
-           <input placeholder= "title" id="article-title" type="text" required>
-           <textarea name="body" placeholder= "" id="article-body" cols="30" rows="10" required></textarea >
-           <input placeholder= "author" id="article-author" type="text">
-           <input placeholder= "url" id="article-url" type="url">
-           <input placeholder= "category" id="article-body" type="text">
-           <label for=""><input placeholder= "pubdate" id="article-pubdate" type="checkbox">Published</label>
+          <form id="article-form">
+            <input placeholder= "title" id="article-title" type="text" required>
+            <textarea name="body" placeholder= "" id="article-body" cols="30" rows="10" required></textarea >
+            <input placeholder= "author" id="article-author" type="text">
+            <input placeholder= "url" id="article-url" type="url">
+            <input placeholder= "category" id="article-body" type="text">
+            <label for=""><input placeholder= "pubdate" id="article-pubdate" type="checkbox">Published</label>
+          </form>
       </section>
 
       <section id="articles" class="tab-content">
@@ -82,6 +83,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <!-- NOTE (stretch goal): Include script tags for 3rd party libraries to enable Markdown rendering and code syntax highlighting. Use the minified CDN. Keep in mind that if we want these features to render properly on our main blog page (index.html) that we'll need to add those scripts over there, too. -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="/scripts/blogArticles.js"></script>
     <script src="/scripts/article.js"></script>
     <script src="/scripts/articleView.js"></script>
